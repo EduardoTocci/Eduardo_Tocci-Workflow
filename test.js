@@ -38,11 +38,11 @@ describe('Testes da SWAPI', () => {
     });
 
     
-    // test('Deve visualizar todos os planetas', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/planets");
-    //     expect(resposta.status).toBe(200);
-    //     expect(resposta.body.results.length).toBeGreaterThan(0);
-    // });
+    test('Deve visualizar todos os planetas', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/planets");
+        expect(resposta.status).toBe(200);
+        expect(resposta.body.results.length).toBeGreaterThan(0);
+    });
 
     
     // test('Deve listar os veículos de Luke Skywalker', async () => {
