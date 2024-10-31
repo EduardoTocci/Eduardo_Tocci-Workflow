@@ -14,11 +14,11 @@ describe('Testes da SWAPI', () => {
         expect(resposta.status).toBe(200);
         expect(resposta.body.name).toBe('Slave 1');
     });
-    // test('Deve visualizar informações de um filme existente', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/films/1");
-    //     expect(resposta.status).toBe(200);
-    //     expect(resposta.body.title).toBe('A New Hope');
-    // });
+    test('Deve visualizar informações de um filme existente', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/films/1");
+        expect(resposta.status).toBe(200);
+        expect(resposta.body.title).toBe('A New Hope');
+    });
 
     // test('Deve receber uma mensagem de erro ao buscar um planeta inexistente', async () => {
     //     const resposta = await request("https://swapi.dev/api").get("/planets/9999");
