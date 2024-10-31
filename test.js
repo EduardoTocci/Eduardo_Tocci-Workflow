@@ -53,11 +53,11 @@ describe('Testes da SWAPI', () => {
     });
 
     
-    // test('Deve visualizar todos os filmes', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/films");
-    //     expect(resposta.status).toBe(200);
-    //     expect(resposta.body.results.length).toBeGreaterThan(0);
-    // });
+    test('Deve visualizar todos os filmes', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/films");
+        expect(resposta.status).toBe(200);
+        expect(resposta.body.results.length).toBeGreaterThan(0);
+    });
 
     
     // test('Deve receber uma mensagem de erro ao buscar uma rota inexistente', async () => {
