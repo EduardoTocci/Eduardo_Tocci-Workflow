@@ -26,10 +26,10 @@ describe('Testes da SWAPI', () => {
     });
 
     
-    // test('Deve receber uma mensagem de erro ao buscar uma nave inexistente', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/starships/9999");
-    //     expect(resposta.status).toBe(404);
-    // });
+    test('Deve receber uma mensagem de erro ao buscar uma nave inexistente', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/starships/9999");
+        expect(resposta.status).toBe(404);
+    });
 
     
     // test('Deve receber uma mensagem de erro ao buscar um filme inexistente', async () => {
