@@ -60,10 +60,10 @@ describe('Testes da SWAPI', () => {
     });
 
     
-    // test('Deve receber uma mensagem de erro ao buscar uma rota inexistente', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/heroes");
-    //     expect(resposta.status).toBe(404);
-    // });
+    test('Deve receber uma mensagem de erro ao buscar uma rota inexistente', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/heroes");
+        expect(resposta.status).toBe(404);
+    });
 });
 
 
