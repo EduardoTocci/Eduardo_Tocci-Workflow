@@ -45,12 +45,12 @@ describe('Testes da SWAPI', () => {
     });
 
     
-    // test('Deve listar os veículos de Luke Skywalker', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/people/1");
-    //     expect(resposta.status).toBe(200);
-    //     expect(resposta.body.vehicles.length).toBeGreaterThan(0);
-    //     expect(resposta.body.vehicles).toContain("https://swapi.dev/api/vehicles/14/");
-    // });
+    test('Deve listar os veículos de Luke Skywalker', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/people/1");
+        expect(resposta.status).toBe(200);
+        expect(resposta.body.vehicles.length).toBeGreaterThan(0);
+        expect(resposta.body.vehicles).toContain("https://swapi.dev/api/vehicles/14/");
+    });
 
     
     // test('Deve visualizar todos os filmes', async () => {
