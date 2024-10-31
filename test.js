@@ -9,11 +9,11 @@ describe('Testes da SWAPI', () => {
         expect(resposta.body.name).toBe('Tatooine');
     });
 
-    // test('Deve visualizar informações de uma nave existente', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/starships/21");
-    //     expect(resposta.status).toBe(200);
-    //     expect(resposta.body.name).toBe('Slave 1');
-    // });
+    test('Deve visualizar informações de uma nave existente', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/starships/21");
+        expect(resposta.status).toBe(200);
+        expect(resposta.body.name).toBe('Slave 1');
+    });
     // test('Deve visualizar informações de um filme existente', async () => {
     //     const resposta = await request("https://swapi.dev/api").get("/films/1");
     //     expect(resposta.status).toBe(200);
