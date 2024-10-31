@@ -32,10 +32,10 @@ describe('Testes da SWAPI', () => {
     });
 
     
-    // test('Deve receber uma mensagem de erro ao buscar um filme inexistente', async () => {
-    //     const resposta = await request("https://swapi.dev/api").get("/films/9999");
-    //     expect(resposta.status).toBe(404);
-    // });
+    test('Deve receber uma mensagem de erro ao buscar um filme inexistente', async () => {
+        const resposta = await request("https://swapi.dev/api").get("/films/9999");
+        expect(resposta.status).toBe(404);
+    });
 
     
     // test('Deve visualizar todos os planetas', async () => {
